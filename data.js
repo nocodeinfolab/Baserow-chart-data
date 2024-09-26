@@ -1,6 +1,6 @@
 let data = [];
-async function getData(dataSourceId, offset = 0) {
-    const url = `https://api.baserow.io/api/builder/data-source/359124/dispatch/?offset=${offset}&count=20`;
+async function getData(359124, offset = 0) {
+    const url = `https://api.baserow.io/api/builder/data-source/${dataSourceId}/dispatch/?offset=${offset}&count=20`;
     try {
         const response = await fetch(url, {
             method: 'POST',
